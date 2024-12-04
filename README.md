@@ -21,8 +21,8 @@ Octars is a modern, fast, and scalable e-commerce application built using React 
 Clone the project to your local machine:
 
 ```bash
-git clone https://github.com/DManuProj/Assesment-ecommerce.git
-cd Assesment-ecommerce
+git clone https://github.com/DManuProj/ShopingCart.git
+cd ShopingCart
 ```
 
 ### 2. Install Dependencies
@@ -62,6 +62,30 @@ Redux is used for state management. It is set up in the store/ directory,
 
 src/slices - where you can find slices for managing user authentication and cart data.
 
+
+# 📚 Additional Features Implemented
+## 1. UI Styling: ShadCN with TailwindCSS
+
+   ### ShadCN: 
+   Utilized ShadCN components to provide consistent, modern UI elements for dropdown menus, buttons, and avatars. ShadCN components were customized with TailwindCSS for a responsive and flexible layout.
+   
+   ### TailwindCSS: 
+   TailwindCSS was used for utility-first styling, ensuring fast, efficient, and customizable design. It helps with creating responsive layouts and enhancing the user experience.
+
+## 2. Local Storage: Persistence of Cart and Authentication State
+
+   ### Cart Persistence: 
+   Used LocalStorage to persist the shopping cart state even after the page reloads. Each user's cart is associated with their unique user ID. The cart data is stored under a key like cart_<userId>,   ensuring that each   user sees their own cart data.
+   ### User Authentication: 
+   The current user’s authentication state is also stored in LocalStorage under the key currentUser. This allows users to remain logged in across page reloads.
+   On login/logout, the relevant data (cart and authentication state) is managed in LocalStorage, so the user's cart and session persist even after refreshing the browser.
+
+## 3 Search and Filter Products
+
+   ### Search Functionality: 
+   A search bar was added to filter products by name. Users can type into the search bar, and the product list will dynamically update to show matching results.
+   ### Filter by Category: 
+   Additional filters were implemented for products, allowing users to filter by category. This enhances the product browsing experience, especially in cases with a large number of products.    
 
 
 
